@@ -1,0 +1,97 @@
+.button {
+    width: 115px;
+    height: 40px;
+    color: #1B1A1A;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    transition: all .5s;
+    z-index: 10;
+
+    &::before {
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: #1C1B1B;
+        position: absolute;
+        top: 0;
+        transition: all .5s;
+        left: 0;
+        transform-origin: top left;
+        transform: scale3d(0, 0, 0);
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: #1C1B1B;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all .5s;
+        transform-origin: bottom right;
+        transform: scale3d(0, 0, 0);
+        z-index: -1;
+    }
+
+    &:hover::before {
+        transform: scale3d(100%, 100%, 100%);
+        transition: all .5s;
+    }
+
+    &:hover::after {
+        transform: scale3d(100%, 100%, 100%);
+        transition: all .5s;
+    }
+
+    p {
+        z-index: 10000;
+    }
+
+    &:hover {
+        color: white;
+        transition: all .5s;
+    }
+
+    span {
+        position: absolute;
+        width: 125px;
+        height: 1px;
+        background: #000;
+    }
+
+    .button-top {
+        top: 0;
+        left: -10px;
+    }
+
+    .button-left {
+        top: -10px;
+        left: 0;
+        height: 50px;
+        width: 1px;
+    }
+
+    .button-bottom {
+        bottom: 0;
+        right: -10px;
+        width: 125px;
+    }
+
+    .button-right {
+        height: 50px;
+        width: 1px;
+        right: 0;
+        top: 0;
+    }
+}
+
+.button-category {
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .3s ease;
+}

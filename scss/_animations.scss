@@ -1,0 +1,61 @@
+@keyframes fadeOut {
+    from {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    to {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+@keyframes fadeInOf {
+    from {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    to {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+@keyframes fadeOutOf {
+    from {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    to {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+}
+
+@keyframes burgerMenuLeft {
+    0% {
+        left: 0;
+    }
+
+    70% {
+        left: 100%;
+    }
+
+    100% {
+        display: none !important;
+    }
+}

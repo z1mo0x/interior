@@ -1,0 +1,70 @@
+@import 'blocks/header';
+@import 'sections/general';
+@import 'blocks/buttons';
+@import 'animations';
+@import 'blocks/product';
+@import 'blocks/card';
+@import 'blocks/footer';
+@import 'adaptive/media';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.uptitle {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    margin-right: 15px;
+    background: #9A6437;
+}
+
+.off_scroll {
+    overflow-y: hidden !important;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+}
+
+.out {
+    animation: fadeOut .7s forwards;
+}
+
+.in {
+    animation: fadeIn .7s forwards;
+}
+
+.outof {
+    animation: fadeOutOf .7s forwards;
+}
+
+.inof {
+    animation: fadeInOf .7s forwards;
+}

@@ -1,0 +1,437 @@
+@media (max-width:1200px) {
+    .header {
+        &__nav {
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .new {
+        &__slide {
+            width: 250px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .slide {
+        &__title {
+            margin-left: 0;
+        }
+    }
+
+    .title {
+        font-size: 40px !important;
+    }
+
+    .team {
+        &__categories {
+            width: 300px;
+            justify-content: center;
+        }
+
+        &__category {
+            width: 45%;
+            text-align: center;
+            margin-left: 0 !important;
+        }
+    }
+
+    .what {
+
+        &__cards {
+            margin-top: 50px;
+        }
+
+        &__card {
+            width: 190px;
+        }
+    }
+
+    .card {
+        &__descr {
+            font-size: 16px;
+        }
+    }
+
+    .special {
+        &__cards {
+            flex-wrap: wrap;
+        }
+    }
+
+    .adv {
+        &__wrapper {
+            padding: 0;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__item-title {
+            font-size: 15px;
+        }
+
+        &__item-descr {
+            font-size: 14px;
+
+        }
+
+        &__item {
+            padding-left: 15px !important;
+        }
+    }
+
+    .articles {
+        &__slide {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width:993px) {
+
+    section {
+        padding: 0 75px;
+    }
+
+    .header {
+        padding: 0 75px;
+
+        &__nav {
+            gap: 20px;
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .new {
+        &__slider {
+            justify-content: space-around;
+        }
+
+        &__slide {
+            height: 425px;
+        }
+    }
+
+    .next {
+        right: -40px;
+    }
+
+
+    .prev {
+        left: -40px;
+    }
+
+    .slide {
+        width: 45%;
+    }
+
+    .what {
+        height: 100%;
+        padding-bottom: 50px;
+
+        &__cards {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: 45%;
+            margin-top: 100px;
+        }
+    }
+
+    .adv {
+        padding: 0;
+
+        &__wrapper {
+            max-width: 100% !important;
+        }
+
+        &__item {
+            padding: 15px 0px 15px 15px !important;
+        }
+
+        &__item-info {
+            width: 100%;
+        }
+    }
+
+    .articles {
+
+        &__slider {
+            height: 100%;
+        }
+
+        &__slide {
+            height: 100%;
+
+            &:not(:first-child) {
+                margin-left: 25px;
+            }
+        }
+
+        &__slide-title {
+            width: 250px;
+        }
+
+        &__info {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    section {
+        padding: 0 55px;
+    }
+
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        &__actions {
+            display: none;
+        }
+
+    }
+
+    .title {
+        font-size: 36px !important;
+        line-height: 45px !important;
+        font-weight: 700 !important;
+    }
+
+    .product {
+        width: 40%;
+
+        &__rating {
+            font-size: 12px;
+        }
+
+        &__prices {
+            font-size: 14px;
+        }
+    }
+
+    .what {
+
+        &__title {
+            margin-top: 15px;
+        }
+
+        &__cards {
+            margin: 0;
+        }
+
+        &__card {
+            margin-top: 50px;
+
+            &:hover {
+                transform: translateY(-25px);
+            }
+        }
+    }
+
+    .special {
+        &__cards {
+            justify-content: space-around;
+        }
+    }
+
+    .adv {
+        &__wrapper {
+            height: 100%;
+        }
+
+        &__items {
+            margin: 0 auto;
+        }
+
+        &__item {
+            padding: 10px 5px !important;
+            width: 25%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .articles {
+        display: flex;
+        align-items: center;
+
+        &__slide {
+            margin-left: 10px;
+            padding-bottom: 10px;
+        }
+
+        &__info {
+            font-size: 14px;
+            margin-left: 0;
+        }
+
+        &__comments {
+            margin-left: 15px;
+        }
+
+        &__slide-title {
+            font-size: 14px;
+            width: 100%;
+        }
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev {
+        left: 0px;
+    }
+
+    .slick-next img {
+        display: none !important;
+    }
+
+    .slick-prev img {
+        display: none !important;
+    }
+}
+
+@media (max-width:578px) {
+
+    section {
+        padding: 15px;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        padding: 0;
+
+        &__wrapper {
+            justify-content: space-around;
+        }
+
+        &__burger-list {
+            width: 100%;
+        }
+
+    }
+
+    .new {
+        &__slide {
+            width: 75%;
+        }
+    }
+
+    .title {
+        font-size: 28px !important;
+        line-height: 35px !important;
+        margin-top: 20px;
+    }
+
+    .uptitle {
+        font-size: 13px !important;
+        width: 100%;
+    }
+
+    .adv {
+        &__items {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 50%;
+            border: none !important;
+        }
+    }
+
+    .team {
+        &__header {
+            flex-direction: column;
+        }
+
+        &__categories {
+            margin-top: 15px;
+        }
+
+        &__category {
+            width: 48%;
+        }
+    }
+
+    .product {
+        width: 100%;
+
+        &__rating {
+            font-size: 20px;
+        }
+    }
+
+    .what {
+        &__card {
+            width: 100%;
+        }
+    }
+
+    .footer {
+
+        &__logo {
+            img {
+                width: 125px;
+            }
+        }
+
+        &__copyright {
+            font-size: 12px;
+            width: 75%;
+        }
+
+        &__under {
+            padding: 0 15px;
+        }
+
+        &__socials i {
+            font-size: 14px;
+            width: 25%;
+        }
+
+        &__title {
+            font-size: 20px !important;
+        }
+
+        &__descr {
+            width: 75%;
+        }
+
+        &__subscribe {
+            input {
+                width: 75%;
+
+
+            }
+        }
+
+        &__button {
+            width: 25%;
+
+            &:hover {
+                width: 75%;
+            }
+        }
+    }
+}
